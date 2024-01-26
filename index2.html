@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Enroll in learnofy
+	</title>
+
+	<style>
+
+		
+		body {
+			background-color:#F8FF95;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			
+		}
+
+		
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+            color: #272829;
+		}
+
+		
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: serif;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		
+		
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		
+		button {
+			background-color: #F8FF95;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Enroll in <em>Learnofy</em></h1>
+
+	
+	<form id="form">
+
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+		
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+			You are studying in ?
+			</label>
+			
+		
+			<select name="role" id="role">
+				<option value="student">School </option>
+				<option value="intern">PU College</option>
+				<option value="professional">Degree College</option>
+				
+			</select>
+		</div>
+
+		
+
+		<div class="form-control">
+			<label>Subjects  You want to explore from <em>Learnify</em>
+				
+			</label>
+			
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">OS</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">DSA</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Theory Of Computation</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Principle of Compilers</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Computer Networks</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">DBMS</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Discrete Mathematics</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Artificial Intelligence</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Cryptography</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">CyberSecurity</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any Queries?
+			</label>
+
+			
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		
+		<button type="submit" value="submit" onclick="func()">
+			Submit
+		</button>
+	</form>
+    <script>
+        function func()
+        {
+            alert("Submitted Succesfully!!");
+        }
+    </script>
+</body>
+</html>
